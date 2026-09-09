@@ -1,0 +1,32 @@
+spriteTypes = {
+	### Upgrades/Features ###
+	spriteType = {
+		name = "GFX_upgrade_cow_kl_iron_throne"
+		texturefile = "gfx\\interface\\wonder_interface\\wonder_upgrades\\wonder_upgrade_cow_kl_iron_throne.dds"
+	}
+	spriteType = {
+		name = "GFX_upgrade_cow_three_bells_norvos"
+		texturefile = "gfx\\interface\\wonder_interface\\wonder_upgrades\\wonder_upgrade_cow_three_bells_norvos.dds"
+	}
+	spriteType = {
+		name = "GFX_upgrade_cow_dragon_towers"
+		texturefile = "gfx\\interface\\wonder_interface\\wonder_upgrades\\wonder_upgrade_cow_dragon_towers.dds"
+	}
+	spriteType = {
+		name = "GFX_upgrade_cow_amphitheatron"
+		texturefile = "gfx\\interface\\wonder_interface\\wonder_upgrades\\wonder_upgrade_cow_amphitheatron.dds"
+	}
+	spriteType = {
+		name = "GFX_upgrade_cow_circus_maximus"
+		texturefile = "gfx\\interface\\wonder_interface\\wonder_upgrades\\wonder_upgrade_cow_circus_maximus.dds"
+	}
+	spriteType = {
+		name = "GFX_upgrade_cow_street_lamps_cord"
+		texturefile = "gfx\\interface\\wonder_interface\\wonder_upgrades\\wonder_upgrade_cow_street_lamps_cord.dds"
+	}
+	spriteType = {
+		name = "GFX_upgrade_cow_black_white_house"
+		texturefile = "gfx\\interface\\wonder_interface\\wonder_upgrades\\wonder_upgrade_cow_black_white_house.dds"
+	}
+	### Upgrades/Features END ###
+}

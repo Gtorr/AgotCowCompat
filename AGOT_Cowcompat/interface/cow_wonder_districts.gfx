@@ -1,0 +1,204 @@
+spriteTypes = {
+    ### Districts ###
+    spriteType = {
+        name = "GFX_upgrade_cow_district_palace"
+        texturefile = "gfx\\interface\\wonder_interface\\wonder_upgrades\\districts\\wonder_upgrade_cow_district_palace.dds"
+    }
+    spriteType = {
+        name = "GFX_upgrade_cow_district_maegors_holdfast"
+        texturefile = "gfx\\interface\\wonder_interface\\wonder_upgrades\\districts\\wonder_upgrade_cow_district_maegors_holdfast.dds"
+    }
+    spriteType = {
+        name = "GFX_upgrade_cow_district_palace_sarnath"
+        texturefile = "gfx\\interface\\wonder_interface\\wonder_upgrades\\districts\\wonder_upgrade_cow_district_palace_sarnath.dds"
+    }
+    spriteType = {
+        name = "GFX_upgrade_cow_district_hightower"
+        texturefile = "gfx\\interface\\wonder_interface\\wonder_upgrades\\districts\\wonder_upgrade_cow_district_hightower.dds"
+    }
+    spriteType = {
+        name = "GFX_upgrade_cow_district_library"
+        texturefile = "gfx\\interface\\wonder_interface\\wonder_upgrades\\districts\\wonder_upgrade_cow_district_library.dds"
+    }
+    spriteType = {
+        name = "GFX_upgrade_cow_district_library_citadel"
+        texturefile = "gfx\\interface\\wonder_interface\\wonder_upgrades\\districts\\wonder_upgrade_cow_district_library_citadel.dds"
+    }
+    spriteType = {
+        name = "GFX_upgrade_cow_district_university"
+        texturefile = "gfx\\interface\\wonder_interface\\wonder_upgrades\\districts\\wonder_upgrade_cow_district_university.dds"
+    }
+    spriteType = {
+        name = "GFX_upgrade_cow_district_university_citadel"
+        texturefile = "gfx\\interface\\wonder_interface\\wonder_upgrades\\districts\\wonder_upgrade_cow_district_university_citadel.dds"
+    }
+    spriteType = {
+        name = "GFX_upgrade_cow_district_harbor"
+        texturefile = "gfx\\interface\\wonder_interface\\wonder_upgrades\\districts\\wonder_upgrade_cow_district_harbor.dds"
+    }
+    spriteType = {
+        name = "GFX_upgrade_cow_district_amphitheatre"
+        texturefile = "gfx\\interface\\wonder_interface\\wonder_upgrades\\districts\\wonder_upgrade_cow_district_amphitheatre.dds"
+    }
+    spriteType = {
+        name = "GFX_upgrade_cow_district_kl_dragonpit"
+        texturefile = "gfx\\interface\\wonder_interface\\wonder_upgrades\\districts\\wonder_upgrade_cow_district_kl_dragonpit.dds"
+    }
+    spriteType = {
+        name = "GFX_upgrade_cow_district_garden"
+        texturefile = "gfx\\interface\\wonder_interface\\wonder_upgrades\\districts\\wonder_upgrade_cow_district_garden.dds"
+    }
+    spriteType = {
+        name = "GFX_upgrade_cow_district_long_bridge_volantis"
+        texturefile = "gfx\\interface\\wonder_interface\\wonder_upgrades\\districts\\wonder_upgrade_cow_district_long_bridge_volantis.dds"
+    }
+    spriteType = {
+        name = "GFX_upgrade_cow_district_grand_walls"
+        texturefile = "gfx\\interface\\wonder_interface\\wonder_upgrades\\districts\\wonder_upgrade_cow_district_grand_walls.dds"
+    }
+    spriteType = {
+        name = "GFX_upgrade_cow_district_triple_walls_qarth"
+        texturefile = "gfx\\interface\\wonder_interface\\wonder_upgrades\\districts\\wonder_upgrade_cow_district_triple_walls_qarth.dds"
+    }
+    spriteType = {
+        name = "GFX_upgrade_cow_district_fortress"
+        texturefile = "gfx\\interface\\wonder_interface\\wonder_upgrades\\districts\\wonder_upgrade_cow_district_fortress.dds"
+    }
+    spriteType = {
+        name = "GFX_upgrade_cow_district_red_keep"
+        texturefile = "gfx\\interface\\wonder_interface\\wonder_upgrades\\districts\\wonder_upgrade_cow_district_red_keep.dds"
+    }
+    spriteType = {
+        name = "GFX_upgrade_cow_district_great_sept"
+        texturefile = "gfx\\interface\\wonder_interface\\wonder_upgrades\\districts\\wonder_upgrade_cow_district_great_sept.dds"
+    }
+    spriteType = {
+        name = "GFX_upgrade_cow_district_great_sept_baelor"
+        texturefile = "gfx\\interface\\wonder_interface\\wonder_upgrades\\districts\\wonder_upgrade_cow_district_great_sept_baelor.dds"
+    }
+    spriteType = {
+        name = "GFX_upgrade_cow_district_great_sept_starry"
+        texturefile = "gfx\\interface\\wonder_interface\\wonder_upgrades\\districts\\wonder_upgrade_cow_district_great_sept_starry.dds"
+    }
+    spriteType = {
+        name = "GFX_upgrade_cow_district_red_temple"
+        texturefile = "gfx\\interface\\wonder_interface\\wonder_upgrades\\districts\\wonder_upgrade_cow_district_red_temple.dds"
+    }
+    spriteType = {
+        name = "GFX_upgrade_cow_district_red_temple_volantis"
+        texturefile = "gfx\\interface\\wonder_interface\\wonder_upgrades\\districts\\wonder_upgrade_cow_district_red_temple_volantis.dds"
+    }
+    spriteType = {
+        name = "GFX_upgrade_cow_district_red_temple_braavos"
+        texturefile = "gfx\\interface\\wonder_interface\\wonder_upgrades\\districts\\wonder_upgrade_cow_district_red_temple_braavos.dds"
+    }
+    spriteType = {
+        name = "GFX_upgrade_cow_district_synagogue"
+        texturefile = "gfx\\interface\\wonder_interface\\wonder_upgrades\\districts\\wonder_upgrade_cow_district_synagogue.dds"
+    }
+    spriteType = {
+        name = "GFX_upgrade_cow_district_temple_pagan"
+        texturefile = "gfx\\interface\\wonder_interface\\wonder_upgrades\\districts\\wonder_upgrade_cow_district_temple_pagan.dds"
+    }
+    spriteType = {
+        name = "GFX_upgrade_cow_district_temple_hellenic"
+        texturefile = "gfx\\interface\\wonder_interface\\wonder_upgrades\\districts\\wonder_upgrade_cow_district_temple_hellenic.dds"
+    }
+    spriteType = {
+        name = "GFX_upgrade_cow_district_temple_buddhist"
+        texturefile = "gfx\\interface\\wonder_interface\\wonder_upgrades\\districts\\wonder_upgrade_cow_district_temple_buddhist.dds"
+    }
+    spriteType = {
+        name = "GFX_upgrade_cow_district_temple_hindu"
+        texturefile = "gfx\\interface\\wonder_interface\\wonder_upgrades\\districts\\wonder_upgrade_cow_district_temple_hindu.dds"
+    }
+    spriteType = {
+        name = "GFX_upgrade_cow_district_lighthouse"
+        texturefile = "gfx\\interface\\wonder_interface\\wonder_upgrades\\districts\\wonder_upgrade_cow_district_lighthouse.dds"
+    }
+    spriteType = {
+        name = "GFX_upgrade_cow_district_mausoleum"
+        texturefile = "gfx\\interface\\wonder_interface\\wonder_upgrades\\districts\\wonder_upgrade_cow_district_mausoleum.dds"
+    }
+    spriteType = {
+        name = "GFX_upgrade_cow_district_aztec"
+        texturefile = "gfx\\interface\\wonder_interface\\wonder_upgrades\\districts\\wonder_upgrade_cow_district_aztec.dds"
+    }
+    spriteType = {
+        name = "GFX_upgrade_cow_district_generic"
+        texturefile = "gfx\\interface\\wonder_interface\\wonder_upgrades\\districts\\wonder_upgrade_cow_district_generic.dds"
+    }
+    spriteType = {
+        name = "GFX_upgrade_cow_district_statue"
+        texturefile = "gfx\\interface\\wonder_interface\\wonder_upgrades\\districts\\wonder_upgrade_cow_district_statue.dds"
+    }
+    spriteType = {
+        name = "GFX_upgrade_cow_district_titan_of_braavos"
+        texturefile = "gfx\\interface\\wonder_interface\\wonder_upgrades\\districts\\wonder_upgrade_cow_district_titan_of_braavos.dds"
+    }
+    spriteType = {
+        name = "GFX_upgrade_cow_district_horse_statue"
+        texturefile = "gfx\\interface\\wonder_interface\\wonder_upgrades\\districts\\wonder_upgrade_cow_district_horse_statue.dds"
+    }
+    spriteType = {
+        name = "GFX_upgrade_cow_district_pagan_stones"
+        texturefile = "gfx\\interface\\wonder_interface\\wonder_upgrades\\districts\\wonder_upgrade_cow_district_pagan_stones.dds"
+    }
+    spriteType = {
+        name = "GFX_upgrade_cow_district_pyramid"
+        texturefile = "gfx\\interface\\wonder_interface\\wonder_upgrades\\districts\\wonder_upgrade_cow_district_pyramid.dds"
+    }
+    spriteType = {
+        name = "GFX_upgrade_cow_district_underground_city"
+        texturefile = "gfx\\interface\\wonder_interface\\wonder_upgrades\\districts\\wonder_upgrade_cow_district_underground_city.dds"
+    }
+    spriteType = {
+        name = "GFX_upgrade_cow_district_grand_walls_athens"
+        texturefile = "gfx\\interface\\wonder_interface\\wonder_upgrades\\districts\\wonder_upgrade_cow_district_grand_walls_athens.dds"
+    }
+    spriteType = {
+        name = "GFX_upgrade_cow_district_bibliothekai_alex"
+        texturefile = "gfx\\interface\\wonder_interface\\wonder_upgrades\\districts\\wonder_upgrade_cow_district_bibliothekai_alex.dds"
+    }
+    spriteType = {
+        name = "GFX_upgrade_cow_district_hippodromos_byz"
+        texturefile = "gfx\\interface\\wonder_interface\\wonder_upgrades\\districts\\wonder_upgrade_cow_district_hippodromos_byz.dds"
+    }
+    spriteType = {
+        name = "GFX_upgrade_cow_district_forum_constantine"
+        texturefile = "gfx\\interface\\wonder_interface\\wonder_upgrades\\districts\\wonder_upgrade_cow_district_forum_constantine.dds"
+    }
+    spriteType = {
+        name = "GFX_upgrade_cow_district_forum_romanum"
+        texturefile = "gfx\\interface\\wonder_interface\\wonder_upgrades\\districts\\wonder_upgrade_cow_district_forum_romanum.dds"
+    }
+    spriteType = {
+        name = "GFX_upgrade_cow_district_mega_palation"
+        texturefile = "gfx\\interface\\wonder_interface\\wonder_upgrades\\districts\\wonder_upgrade_cow_district_mega_palation.dds"
+    }
+    spriteType = {
+        name = "GFX_upgrade_cow_district_lateran_palace"
+        texturefile = "gfx\\interface\\wonder_interface\\wonder_upgrades\\districts\\wonder_upgrade_cow_district_lateran_palace.dds"
+    }
+    spriteType = {
+        name = "GFX_upgrade_cow_district_pentos_harbor"
+        texturefile = "gfx\\interface\\wonder_interface\\wonder_upgrades\\districts\\wonder_upgrade_cow_district_limen_byz.dds"
+    }
+    spriteType = {
+        name = "GFX_upgrade_cow_district_valyria_harbor"
+        texturefile = "gfx\\interface\\wonder_interface\\wonder_upgrades\\districts\\wonder_upgrade_cow_district_port_of_piraeus.dds"
+    }
+    spriteType = {
+        name = "GFX_upgrade_cow_district_casterly_rock"
+        texturefile = "gfx\\interface\\wonder_interface\\wonder_upgrades\\districts\\wonder_upgrade_cow_district_casterly_rock.dds"
+    }
+    spriteType = {
+        name = "GFX_upgrade_cow_district_gardens_parsa"
+        texturefile = "gfx\\interface\\wonder_interface\\wonder_upgrades\\districts\\wonder_upgrade_cow_district_gardens_parsa.dds"
+    }
+    spriteType = {
+        name = "GFX_upgrade_cow_district_hall_dragonlords"
+        texturefile = "gfx\\interface\\wonder_interface\\wonder_upgrades\\districts\\wonder_upgrade_cow_district_hall_dragonlords.dds"
+    }
+    ### Districts END ###
+}

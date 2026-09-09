@@ -1,0 +1,23 @@
+# Triggers when a wonder finishes building a stage.
+# ROOT = owner
+# FROM = wonder
+# FROMFROM = province (location of wonder)
+on_wonder_stage_finish = {
+	events = {
+		COW.10000 #Sets description for generic Cities of Wonders (COWs).
+		COW.10001 #Sets name for generic Cities of Wonders (COWs).
+		COW.10002 #Gives desc_flag for cow_agot depending on wonder stage
+
+	}
+}
+#character
+on_startup = {
+	events = {
+		cowcompat.1
+	}
+}
+on_five_year_pulse = {
+	events = {
+		#cowcompat.10 # Player mana
+	}
+}

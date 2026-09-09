@@ -1,0 +1,144 @@
+decisions = {
+    cow_visit_wonder = {
+        ai = no
+        # only_independent = yes
+        is_high_prio = yes
+        potential = {
+            is_playable = yes
+        }
+        effect = {
+            character_event  = { id = cowcompat_interact.1 }
+        }
+    }
+    # Training Academy Hero
+    cow_recruit_academy_hero = {
+        ai = no
+        only_independent = yes
+        is_high_prio = yes
+        potential = {
+            is_playable = yes
+
+            any_realm_wonder_upgrade = {
+                has_wonder_upgrade = upgrade_cow_training_academy
+                is_active = yes
+            }
+        }
+        allow = {
+            is_inaccessible_trigger = no
+            custom_tooltip = {
+                text = has_not_recruited_in_5_years_TT
+                hidden_tooltip = {
+                    OR = {
+                        NOT = { has_character_flag = recruited_academy_hero }
+                        had_character_flag = { flag = recruited_academy_hero days = 1825 }
+                    }
+                }
+            }
+        }
+
+        effect = {
+            random_realm_wonder_upgrade = {
+                limit = {
+                    has_wonder_upgrade = upgrade_cow_training_academy
+                    is_active = yes
+                }
+                save_event_target_as = train_academy
+                wonder = { save_event_target_as = wonder_target }
+            }
+            hidden_effect = {
+                set_character_flag = recruited_academy_hero
+
+                spawn_good_commander_effect = yes
+
+                new_character = {
+                    random_list = {
+                        10 = { add_artifact = lance_tier_1_new }
+                        10 = { add_artifact = sword_tier_1_new }
+                        10 = { add_artifact = scimitar_tier_1_new }
+                        10 = { add_artifact = axe_tier_1_new }
+                        10 = { add_artifact = mace_tier_1_new }
+                    }
+
+                    add_trait = gladiator
+                    random_list = {
+                        10 = { add_trait = robust }
+                        10 = { add_trait = duelist }
+                        10 = { add_trait = impaler }
+                    }
+
+                    remove_trait = misguided_warrior
+                    remove_trait = tough_soldier
+                    remove_trait = skilled_tactician
+                    remove_trait = brilliant_strategist
+
+                    random_list = {
+                        45 = { add_trait = misguided_warrior }
+                        40 = { add_trait = tough_soldier }
+                        10 = { add_trait = skilled_tactician }
+                        5 = { add_trait = brilliant_strategist }
+                    }
+                    random_list = {
+                        10 = { add_trait = aggressive_leader }
+                        10 = { add_trait = defensive_leader }
+                        10 = { add_trait = experimenter }
+                        10 = { add_trait = unyielding_leader }
+                        10 = { add_trait = flat_terrain_leader }
+                    }
+                }
+                character_event = { id = NE.1 }
+            }
+            custom_tooltip = { text = gladiator_commander_TT }
+        }
+
+        ai_will_do = {
+            factor = 0
+        }
+    }
+
+
+    cow_drink_from_fountain_of_youth = {
+        only_independent = yes
+        is_high_prio = yes
+        ai = no
+
+        potential = {
+            ai = no
+            is_playable = yes
+            any_realm_wonder_upgrade = {
+                has_wonder_upgrade = upgrade_cow_fountain_of_youth
+                is_active = yes
+            }
+            NOT = {
+                has_game_rule = {
+                    name = supernatural_events
+                    value = off
+                }
+            }
+        }
+        allow = {
+            ai = no
+            is_inaccessible_trigger = no
+            age = 18
+            custom_tooltip = {
+                text = has_not_chugged_in_10_years_TT
+                hidden_tooltip = {
+                    NOT = { has_character_modifier = drank_from_fountain_cooldown }
+                }
+            }
+        }
+        effect = {
+            hidden_effect = {
+                add_character_modifier = {
+                    name = drank_from_fountain_cooldown
+                    years = 10
+                    hidden = yes
+                }
+                character_event = { id = LT.60201 }
+            }
+        }
+        ai_will_do = {
+            factor = 0
+        }
+    }
+
+}

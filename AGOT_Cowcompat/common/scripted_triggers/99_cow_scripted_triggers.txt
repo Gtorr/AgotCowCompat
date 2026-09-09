@@ -1,0 +1,286 @@
+#City of Wonders
+#has_city_of_wonders_trigger						Checks if Great Work (Wonder) is a City of Wonders.
+#has_custom_city_of_wonders_trigger			    	Checks if Great Work (Wonder) is a CUSTOM City of Wonders.
+#has_historical_city_of_wonders_trigger			   	Checks if Great Work (Wonder) is a historical City of Wonders.
+#is_historical_cow_province_id_trigger			   	Checks if province is a historical City of Wonders location.
+#uses_dynamic_name_cow_trigger				    	Checks if Great Work (Wonder) uses dynamic COW name system.
+#has_cow_library_district_trigger			    	Checks if Great Work Upgrade is a COW library district.
+#has_cow_unique_great_sept_district_trigger	    	Checks if Great Work has unique Great Sept district.
+#has_cow_unique_red_temple_district_trigger	    	Checks if Great Work has unique Great Red Temple district.
+#has_cow_unique_synagogue_district_trigger	    	Checks if Great Work has unique Synagogue district.
+#has_cow_unique_hellenic_temple_district_trigger	Checks if Great Work has unique Hellenic Great Temple district.
+#has_cow_unique_hindu_temple_district_trigger		Checks if Great Work has unique Hindu Temple district.
+#has_cow_unique_statue_district_trigger				Checks if Great Work has unique Ruler Statue district.
+#has_cow_unique_horse_statue_district_trigger		Checks if Great Work has unique Horse Statue district.
+#has_cow_unique_grand_walls_district_trigger		Checks if Great Work has unique Grand Walls district.
+#has_cow_unique_fortress_district_trigger			Checks if Great Work has unique Fortress district.
+#has_cow_unique_harbor_district_trigger				Checks if Great Work has unique Harbor district.
+#has_cow_unique_lighthouse_district_trigger			Checks if Great Work has unique Lighthouse district.
+#has_cow_unique_palace_district_trigger				Checks if Great Work has unique Palace district.
+#has_cow_unique_amphitheatre_district_trigger		Checks if Great Work has unique Amphitheatre/Hippodrome district.
+#has_cow_unique_garden_district_trigger				Checks if Great Work has unique Garden district.
+#has_cow_unique_library_district_trigger			Checks if Great Work has unique Library district.
+#has_cow_unique_university_district_trigger			Checks if Great Work has unique University district.
+#has_cow_unique_mausoleum_district_trigger			Checks if Great Work has unique Mausoleum district.
+#has_cow_unique_pyramid_district_trigger			Checks if Great Work has unique Pyramid district.
+#has_cow_unique_pagan_stones_district_trigger		Checks if Great Work has unique Pagan Stones district.
+has_city_of_wonders_trigger = {
+    OR = {
+        has_wonder = wonder_city_of_wonders
+        has_wonder = wonder_city_of_wonders_rep
+        has_wonder = wonder_city_of_wonders_agot
+        has_wonder = wonder_city_of_wonders_volantis
+        has_wonder = wonder_city_of_wonders_braavos
+        has_wonder = wonder_city_of_wonders_qarth
+        has_wonder = wonder_city_of_wonders_meereen
+        has_wonder = wonder_city_of_wonders_yunkai
+        has_wonder = wonder_city_of_wonders_astapor
+        has_wonder = wonder_city_of_wonders_oldtown
+        has_wonder = wonder_city_of_wonders_kings_landing
+        has_wonder = wonder_city_of_wonders_yin
+        has_wonder = wonder_city_of_wonders_ibben
+        has_wonder = wonder_city_of_wonders_elyria
+        has_wonder = wonder_city_of_wonders_asshai
+        has_wonder = wonder_city_of_wonders_gogossos
+        has_wonder = wonder_city_of_wonders_old_ghis
+        has_wonder = wonder_city_of_wonders_new_ghis
+        has_wonder = wonder_city_of_wonders_pentos
+        has_wonder = wonder_city_of_wonders_qohor
+        has_wonder = wonder_city_of_wonders_lorath
+        has_wonder = wonder_city_of_wonders_norvos
+        has_wonder = wonder_city_of_wonders_myr
+        has_wonder = wonder_city_of_wonders_lys
+        has_wonder = wonder_city_of_wonders_tyrosh
+        has_wonder = wonder_city_of_wonders_ny_sar
+        has_wonder = wonder_city_of_wonders_sarnath
+        has_wonder = wonder_city_of_wonders_essaria
+        has_wonder = wonder_city_of_wonders_valyria
+    }
+}
+
+has_custom_city_of_wonders_trigger = {
+    OR = {
+        has_wonder = wonder_city_of_wonders
+        has_wonder = wonder_city_of_wonders_rep
+    }
+}
+
+has_historical_city_of_wonders_trigger = {
+    OR = {
+        has_wonder = wonder_city_of_wonders_agot
+        has_wonder = wonder_city_of_wonders_volantis
+        has_wonder = wonder_city_of_wonders_braavos
+        has_wonder = wonder_city_of_wonders_qarth
+        has_wonder = wonder_city_of_wonders_meereen
+        has_wonder = wonder_city_of_wonders_yunkai
+        has_wonder = wonder_city_of_wonders_astapor
+        has_wonder = wonder_city_of_wonders_oldtown
+        has_wonder = wonder_city_of_wonders_kings_landing
+        has_wonder = wonder_city_of_wonders_yin
+        has_wonder = wonder_city_of_wonders_ibben
+        has_wonder = wonder_city_of_wonders_elyria
+        has_wonder = wonder_city_of_wonders_asshai
+        has_wonder = wonder_city_of_wonders_gogossos
+        has_wonder = wonder_city_of_wonders_old_ghis
+        has_wonder = wonder_city_of_wonders_new_ghis
+        has_wonder = wonder_city_of_wonders_pentos
+        has_wonder = wonder_city_of_wonders_qohor
+        has_wonder = wonder_city_of_wonders_lorath
+        has_wonder = wonder_city_of_wonders_norvos
+        has_wonder = wonder_city_of_wonders_myr
+        has_wonder = wonder_city_of_wonders_lys
+        has_wonder = wonder_city_of_wonders_tyrosh
+        has_wonder = wonder_city_of_wonders_ny_sar
+        has_wonder = wonder_city_of_wonders_sarnath
+        has_wonder = wonder_city_of_wonders_essaria
+        has_wonder = wonder_city_of_wonders_valyria
+    }
+}
+
+is_historical_cow_province_id_trigger = {
+    OR = {
+        # province_id = 496 # Byzantion
+        # province_id = 333 # Roma
+        # province_id = 802 # Alexandria
+        # province_id = 764 # Antiocheia
+        # province_id = 774 # Jerusalem
+        # province_id = 693 # Baghdad
+        # province_id = 1365 # Delhi # MUST CHANGE ID FOR HIP SWMH!
+        # province_id = 482 # Athens
+        # province_id = 644 # Shiraz (Persepolis)
+        # province_id = 817 # Tunis (Carthage)
+        # province_id = 343 # Siracusa # MUST CHANGE ID FOR HIP SWMH!
+    }
+}
+
+uses_dynamic_name_cow_trigger = {
+    OR = {
+        has_wonder = wonder_city_of_wonders
+        has_wonder = wonder_city_of_wonders_rep
+        has_wonder = wonder_city_of_wonders_agot
+        has_wonder = wonder_city_of_wonders_volantis
+        has_wonder = wonder_city_of_wonders_braavos
+        has_wonder = wonder_city_of_wonders_qarth
+        has_wonder = wonder_city_of_wonders_meereen
+        has_wonder = wonder_city_of_wonders_yunkai
+        has_wonder = wonder_city_of_wonders_astapor
+        has_wonder = wonder_city_of_wonders_oldtown
+        has_wonder = wonder_city_of_wonders_kings_landing
+        has_wonder = wonder_city_of_wonders_yin
+        has_wonder = wonder_city_of_wonders_ibben
+        has_wonder = wonder_city_of_wonders_elyria
+        has_wonder = wonder_city_of_wonders_asshai
+        has_wonder = wonder_city_of_wonders_gogossos
+        has_wonder = wonder_city_of_wonders_old_ghis
+        has_wonder = wonder_city_of_wonders_new_ghis
+        has_wonder = wonder_city_of_wonders_pentos
+        has_wonder = wonder_city_of_wonders_qohor
+        has_wonder = wonder_city_of_wonders_lorath
+        has_wonder = wonder_city_of_wonders_norvos
+        has_wonder = wonder_city_of_wonders_myr
+        has_wonder = wonder_city_of_wonders_lys
+        has_wonder = wonder_city_of_wonders_tyrosh
+        has_wonder = wonder_city_of_wonders_ny_sar
+        has_wonder = wonder_city_of_wonders_sarnath
+        has_wonder = wonder_city_of_wonders_essaria
+    }
+}
+
+has_cow_library_district_trigger = {
+    OR = {
+        has_wonder_upgrade = upgrade_cow_district_library
+        has_wonder_upgrade = upgrade_cow_district_library_citadel
+    }
+}
+
+has_cow_unique_great_sept_district_trigger = {
+    OR = {
+        has_wonder_upgrade = upgrade_cow_district_great_sept_baelor
+        has_wonder_upgrade = upgrade_cow_district_great_sept_starry
+    }
+}
+
+has_cow_unique_red_temple_district_trigger = {
+    OR = {
+        has_wonder_upgrade = upgrade_cow_district_red_temple_volantis
+    }
+}
+
+has_cow_unique_synagogue_district_trigger = {
+    OR = {
+        # has_wonder_upgrade = upgrade_cow_district_second_temple_jeru
+    }
+}
+
+has_cow_unique_hellenic_temple_district_trigger = {
+    OR = {
+        # has_wonder_upgrade = upgrade_cow_district_pantheon_roma
+    }
+}
+
+has_cow_unique_hindu_temple_district_trigger = {
+    OR = {
+        # has_wonder_upgrade = upgrade_cow_district_hindu_konark
+    }
+}
+
+has_cow_unique_statue_district_trigger = {
+    OR = {
+    }
+}
+
+has_cow_unique_horse_statue_district_trigger = {
+    OR = {
+        # has_wonder_upgrade = upgrade_cow_district_horse_statue_incitatus
+    }
+}
+
+has_cow_unique_grand_walls_district_trigger = {
+    OR = {
+        has_wonder_upgrade = upgrade_cow_district_black_walls
+        has_wonder_upgrade = upgrade_cow_district_triple_walls_qarth
+    }
+}
+
+has_cow_unique_fortress_district_trigger = {
+    OR = {
+        has_wonder_upgrade = upgrade_cow_district_casterly_rock
+        has_wonder_upgrade = upgrade_cow_district_red_keep
+        has_wonder_upgrade = upgrade_cow_district_titan_of_braavos
+        has_wonder_upgrade = upgrade_cow_district_tear_tower
+        has_wonder_upgrade = upgrade_cow_district_dragon_towers
+    }
+}
+
+has_cow_unique_underground_city_district_trigger = {
+    OR = {
+        # has_wonder_upgrade = upgrade_cow_district_underground_city_petra
+    }
+}
+
+has_cow_unique_harbor_district_trigger = {
+    OR = {
+        has_wonder_upgrade = upgrade_cow_district_valyria_harbor
+        has_wonder_upgrade = upgrade_cow_district_pentos_harbor
+    }
+}
+
+has_cow_unique_lighthouse_district_trigger = {
+    OR = {
+        has_wonder_upgrade = upgrade_cow_district_hightower		# (Lighthouse/Palace)
+
+    }
+}
+
+has_cow_unique_palace_district_trigger = {
+    OR = {
+        has_wonder_upgrade = upgrade_cow_district_maegors_holdfast
+        has_wonder_upgrade = upgrade_cow_district_hightower		# (Lighthouse/Palace)
+        has_wonder_upgrade = upgrade_cow_district_hall_dragonlords
+    }
+}
+
+has_cow_unique_amphitheatre_district_trigger = {
+    OR = {
+        #has_wonder_upgrade = upgrade_cow_district_kl_dragonpit
+    }
+}
+
+has_cow_unique_garden_district_trigger = {
+    OR = {
+        has_wonder_upgrade = upgrade_cow_district_lys_garden
+    }
+}
+
+has_cow_unique_library_district_trigger = {
+    OR = {
+        has_wonder_upgrade = upgrade_cow_district_library_citadel
+    }
+}
+
+has_cow_unique_university_district_trigger = {
+    OR = {
+        has_wonder_upgrade = upgrade_cow_district_university_citadel
+    }
+}
+
+has_cow_unique_mausoleum_district_trigger = {
+    OR = {
+        # has_wonder_upgrade = upgrade_cow_district_mausoleum_halicarnassus
+    }
+}
+
+has_cow_unique_pyramid_district_trigger = {
+    OR = {
+        has_wonder_upgrade = upgrade_cow_district_yellowpyramid_yunkai
+        has_wonder_upgrade = upgrade_cow_district_newpyramid_newghis
+        has_wonder_upgrade = upgrade_cow_district_greatpyramid_meereen
+        has_wonder_upgrade = upgrade_cow_district_redpyramid_astapor
+    }
+}
+
+has_cow_unique_pagan_stones_district_trigger = {
+    OR = {
+        # has_wonder_upgrade = upgrade_cow_district_stonehenge
+    }
+}

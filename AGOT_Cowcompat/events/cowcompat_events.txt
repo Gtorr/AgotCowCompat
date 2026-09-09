@@ -1,0 +1,1136 @@
+
+# G01. Volantis  ................. wonder_city_of_wonders_volantis - (Old Volantis)
+# G02. Braavos [cowcompat.19] .................. wonder_city_of_wonders_braavos - (Braavos)
+# G03. City of Wonders (Qarth) .................... wonder_city_of_wonders_qarth - (Qarth)
+# G04. City of Wonders (Meereen) .................. wonder_city_of_wonders_meereen - (Meereen)
+# G05. City of Wonders (Yunkai) ................... wonder_city_of_wonders_yunkai - (Yunkai)
+# G06. City of Wonders (Astapor) .................. wonder_city_of_wonders_astapor - (Astapor)
+# G07. City of Wonders (Oldtown) .................. wonder_city_of_wonders_oldtown - (Oldtown)
+# G08. (King's Landing) [cowcompat.1] ........... wonder_city_of_wonders_kings_landing - (King's Landing)
+# G09. City of Wonders (Yin) ...................... wonder_city_of_wonders_yin - (Yin)
+# G10. City of Wonders (Ibben) .................... wonder_city_of_wonders_ibben - (Port of Ibben)
+# G11. City of Wonders (Elyria) ................... wonder_city_of_wonders_elyria - (Elyria)
+# G12. City of Wonders (Asshai) ................... wonder_city_of_wonders_asshai - (Asshai)
+# G13. City of Wonders (Gogossos) ................. wonder_city_of_wonders_gogossos - (Isle of Tears)
+# G14. City of Wonders (Old Ghis) ................. wonder_city_of_wonders_old_ghis - (Old Ghis)
+# G15. City of Wonders (New Ghis) ................. wonder_city_of_wonders_new_ghis - (New Ghis)
+# G16. City of Wonders (Pentos) ................... wonder_city_of_wonders_pentos - (Pentos)
+# G17. City of Wonders (Qohor) .................... wonder_city_of_wonders_qohor - (Qohor)
+# G18. City of Wonders (Lorath) ................... wonder_city_of_wonders_lorath - (Lorath)
+# G19. City of Wonders (Norvos) ................... wonder_city_of_wonders_norvos - (Norvos)
+# G20. City of Wonders (Myr) ...................... wonder_city_of_wonders_myr - (Myr)
+# G21. City of Wonders (Lys) ...................... wonder_city_of_wonders_lys - (Lys)
+# G22. City of Wonders (Tyrosh) ................... wonder_city_of_wonders_tyrosh - (Tyrosh)
+# G23. City of Wonders (Ny Sar) ................... wonder_city_of_wonders_ny_sar - (Ny Sar)
+# G24. City of Wonders (Sarnath) .................. wonder_city_of_wonders_sarnath - (Vaes Khewo)
+# G25. City of Wonders (Essaria) .................. wonder_city_of_wonders_essaria - (Vaes Khadokh)
+#----NEW by Gt.-----
+# X1. City of Wonders (Valyria) .................. wonder_city_of_wonders_valyria 
+# N0. City of Wonders (Lannisport) .................. wonder_city_of_wonders_lannisport
+### Cities of Wonders ## City of Wonders ###
+namespace = cowcompat
+character_event = {
+	id = cowcompat.1
+	is_triggered_only = yes
+	ai = no
+	hide_window = yes
+	desc = "COWSETUP"
+	trigger = {
+		is_save_game = no
+	}
+	immediate = {
+		# G08.#--------------Kings Landing--------------#
+		if = {
+			limit = {
+				b_red_keep = {
+					has_holder = yes
+				}
+			}
+			b_red_keep = {
+				location = {
+					province_event = {
+						id = cowcompat.10
+					}
+				}
+			}
+		}
+		#--------------Oldtown--------------#
+		if = {
+			limit = {
+				b_the_hightower = {
+					has_holder = yes
+				}
+			}
+			b_the_hightower = {
+				location = {
+					province_event = {
+						id = cowcompat.11
+					}
+				}
+			}
+		}
+		#--------------Tyrosh--------------#
+		if = {
+			limit = {
+				b_tyrosh = {
+					has_holder = yes
+				}
+			}
+			b_tyrosh = {
+				location = {
+					province_event = {
+						id = cowcompat.12
+					}
+				}
+			}
+		}
+		#--------------Lys--------------#
+		if = {
+			limit = {
+				b_tear_tower = {
+					has_holder = yes
+				}
+			}
+			b_tear_tower = {
+				location = {
+					province_event = {
+						id = cowcompat.13
+					}
+				}
+			}
+		}
+		#--------------Myr--------------#
+		if = {
+			limit = {
+				b_myr = {
+					has_holder = yes
+				}
+			}
+			b_myr = {
+				location = {
+					province_event = {
+						id = cowcompat.14
+					}
+				}
+			}
+		}
+		#--------------Pentos--------------#
+		if = {
+			limit = {
+				b_pentos = {
+					has_holder = yes
+				}
+			}
+			b_pentos = {
+				location = {
+					province_event = {
+						id = cowcompat.15
+					}
+				}
+			}
+		}
+		#--------------Ny Sar--------------#
+		if = {
+			limit = {
+				b_ny_sar = {
+					has_holder = yes
+				}
+			}
+			b_ny_sar = {
+				location = {
+					province_event = {
+						id = cowcompat.16
+					}
+				}
+			}
+		}
+		# G01 #--------------Volantis--------------#
+		if = {
+			limit = {
+				b_oldvolantis = {
+					has_holder = yes
+				}
+			}
+			b_oldvolantis = {
+				location = {
+					set_province_flag = cow_volantis
+					province_event = {
+						id = cowcompat.17
+					}
+				}
+			}
+		}
+		#--------------Norvos--------------#
+		if = {
+			limit = {
+				b_norvos = {
+					has_holder = yes
+				}
+			}
+			b_norvos = {
+				location = {
+					province_event = {
+						id = cowcompat.18
+					}
+				}
+			}
+		}
+		# G02.#--------------Braavos--------------#
+		if = {
+			limit = {
+				b_braavos = {
+					has_holder = yes
+				}
+			}
+			b_braavos = {
+				location = {
+					province_event = {
+						id = cowcompat.19
+					}
+				}
+			}
+		}
+		#--------------Lorath--------------#
+		if = {
+			limit = {
+				b_lorath = {
+					has_holder = yes
+				}
+			}
+			b_lorath = {
+				location = {
+					province_event = {
+						id = cowcompat.20
+					}
+				}
+			}
+		}
+		#--------------Qohor--------------#
+		if = {
+			limit = {
+				b_qohor = {
+					has_holder = yes
+				}
+			}
+			b_qohor = {
+				location = {
+					province_event = {
+						id = cowcompat.21
+					}
+				}
+			}
+		}
+		#--------------Essaria--------------#
+		if = {
+			limit = {
+				b_essaria = {
+					has_holder = yes
+				}
+			}
+			b_essaria = {
+				location = {
+					province_event = {
+						id = cowcompat.22
+					}
+				}
+			}
+		}
+		#--------------Sarnath--------------#
+		if = {
+			limit = {
+				b_sarnath1 = {
+					has_holder = yes
+				}
+			}
+			b_sarnath1 = {
+				location = {
+					province_event = {
+						id = cowcompat.23
+					}
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				b_sarnath2 = {
+					has_holder = yes
+				}
+			}
+			b_sarnath2 = {
+				location = {
+					province_event = {
+						id = cowcompat.23
+					}
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				b_sarnath = {
+					has_holder = yes
+				}
+			}
+			b_sarnath = {
+				location = {
+					province_event = {
+						id = cowcompat.23
+					}
+				}
+			}
+		}
+		#-------------- Port of Ibben--------------#
+		if = {
+			limit = {
+				b_port_of_ibben = {
+					has_holder = yes
+				}
+			}
+			b_port_of_ibben = {
+				location = {
+					province_event = {
+						id = cowcompat.24
+					}
+				}
+			}
+		}
+		#--------------Elyria--------------#
+		if = {
+			limit = {
+				b_elyria = {
+					has_holder = yes
+				}
+			}
+			b_elyria = {
+				location = {
+					province_event = {
+						id = cowcompat.25
+					}
+				}
+			}
+		}
+		#--------------Meereen--------------#
+		if = {
+			limit = {
+				b_greatpyramid = {
+					#Xmap
+					has_holder = yes
+				}
+			}
+			b_greatpyramid = {
+				location = {
+					province_event = {
+						id = cowcompat.26
+					}
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				b_meereen = {
+					has_holder = yes
+				}
+			}
+			b_meereen = {
+				location = {
+					province_event = {
+						id = cowcompat.26
+					}
+				}
+			}
+		}
+		#--------------Yunkai--------------#
+		if = {
+			limit = {
+				b_yellow_pyramid = {
+					#Xmap
+					has_holder = yes
+				}
+			}
+			b_yellow_pyramid = {
+				location = {
+					province_event = {
+						id = cowcompat.27
+					}
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				b_yunkai = {
+					has_holder = yes
+				}
+			}
+			b_yunkai = {
+				location = {
+					province_event = {
+						id = cowcompat.27
+					}
+				}
+			}
+		}
+		#--------------Astapor--------------#
+		if = {
+			limit = {
+				b_redhall = {
+					#Xmap
+					has_holder = yes
+				}
+			}
+			b_redhall = {
+				location = {
+					province_event = {
+						id = cowcompat.28
+					}
+				}
+			}
+		}
+		else_if = {
+			#Vanilla
+			limit = {
+				b_astapor = {
+					has_holder = yes
+				}
+			}
+			b_astapor = {
+				location = {
+					province_event = {
+						id = cowcompat.28
+					}
+				}
+			}
+		}
+		#--------------Old Ghis--------------#
+		if = {
+			limit = {
+				b_pyramidoldghis = {
+					has_holder = yes
+				}
+			}
+			b_pyramidoldghis = {
+				location = {
+					province_event = {
+						id = cowcompat.29
+					}
+				}
+			}
+		}
+		#--------------New Ghis--------------#
+		if = {
+			limit = {
+				b_newghis = {
+					has_holder = yes
+				}
+			}
+			b_newghis = {
+				location = {
+					province_event = {
+						id = cowcompat.30
+					}
+				}
+			}
+		}
+		#--------------Qarth--------------#
+		if = {
+			limit = {
+				b_hall_thrones = {
+					has_holder = yes
+				}
+			}
+			b_hall_thrones = {
+				location = {
+					province_event = {
+						id = cowcompat.31
+					}
+				}
+			}
+		}
+		#--------------Gogossos--------------#
+		if = {
+			limit = {
+				b_gogossos_castle = {
+					has_holder = yes
+				}
+			}
+			b_gogossos_castle = {
+				location = {
+					province_event = {
+						id = cowcompat.32
+					}
+				}
+			}
+		}
+		#--------------Yin--------------#
+		if = {
+			limit = {
+				b_anyang_castle = {
+					has_holder = yes
+				}
+			}
+			b_anyang_castle = {
+				location = {
+					province_event = {
+						id = cowcompat.33
+					}
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				b_yin = {
+					has_holder = yes
+				}
+			}
+			b_yin = {
+				location = {
+					province_event = {
+						id = cowcompat.33
+					}
+				}
+			}
+		}
+		#--------------Asshai--------------#
+		if = {
+			limit = {
+				b_asshai_city = {
+					has_holder = yes
+				}
+			}
+			b_asshai_city = {
+				location = {
+					province_event = {
+						id = cowcompat.34
+					}
+				}
+			}
+		}
+		#--------------Valyria--------------#
+		if = {
+			limit = {
+				b_valyria = {
+					has_holder = yes
+				}
+			}
+			b_valyria = {
+				location = {
+					province_event = {
+						id = cowcompat.35
+					}
+				}
+			}
+		}
+	}
+}
+
+#--------------Kings Landing--------------#
+province_event = {
+	id = cowcompat.10
+	is_triggered_only = yes
+	hide_window = yes
+	immediate = {
+		if = {
+			limit = {
+				year = 8000				#Aegon Establishes Capital
+			}
+			set_province_flag = cow_kl
+			add_wonder = wonder_city_of_wonders_kings_landing
+			wonder = {
+				add_wonder_upgrade = upgrade_cow_kl_iron_throne
+				add_wonder_stage = 1				#2
+				add_wonder_stage = 1				#3
+			}
+		}
+		if = {
+			limit = {
+				year = 8036
+			}
+			add_wonder_upgrade = upgrade_cow_district_red_keep
+			wonder = {
+				add_wonder_stage = 1				#4
+			}
+		}
+		if = {
+			limit = {
+				year = 8045				#Completed during reign of Maegor the Cruel
+			}
+			wonder = {
+				add_wonder_upgrade = upgrade_cow_district_maegors_holdfast
+			}
+		}
+		if = {
+			limit = {
+				year = 8055				#Completed during reign of Jaehaerys I
+			}
+			wonder = {
+				add_wonder_stage = 1				#5
+				add_wonder_upgrade = upgrade_cow_district_kl_dragonpit
+			}
+		}
+		if = {
+			limit = {
+				year = 8165				#Baelor establishes Great Sept
+			}
+			wonder = {
+				add_wonder_upgrade = upgrade_cow_district_great_sept_baelor
+				add_wonder_stage = 1				#6
+			}
+		}
+	}
+}
+
+#--------------Oldtown--------------------#
+province_event = {
+	id = cowcompat.11
+	is_triggered_only = yes
+	hide_window = yes
+	immediate = {
+		set_province_flag = cow_oldtown
+		add_wonder = wonder_city_of_wonders_oldtown
+		wonder = {
+			add_wonder_stage = 1
+			add_wonder_stage = 1
+			add_wonder_stage = 1			#4
+			add_wonder_stage = 1			#5
+			add_wonder_stage = 1			#6
+			add_wonder_upgrade = upgrade_cow_district_hightower
+			add_wonder_upgrade = upgrade_cow_district_university_citadel
+			add_wonder_upgrade = upgrade_cow_district_library_citadel
+			add_wonder_upgrade = upgrade_cow_district_great_sept_starry
+		}
+	}
+}
+
+#--------------Tyrosh--------------------#
+province_event = {
+	id = cowcompat.12
+	is_triggered_only = yes
+	hide_window = yes
+	immediate = {
+		add_wonder = wonder_city_of_wonders_tyrosh
+		wonder = {
+			add_wonder_stage = 1
+			add_wonder_stage = 1
+			add_wonder_stage = 1			#4
+			add_wonder_stage = 1			#5
+			add_wonder_stage = 1			#6
+			add_wonder_upgrade = upgrade_cow_district_fortress
+			add_wonder_upgrade = upgrade_cow_district_harbor
+		}
+	}
+}
+
+#--------------Lys--------------------#
+province_event = {
+	id = cowcompat.13
+	is_triggered_only = yes
+	hide_window = yes
+	immediate = {
+		if = {
+			limit = {
+				year = 4000
+			}
+			set_province_flag = cow_lys
+			add_wonder = wonder_city_of_wonders_lys
+			wonder = {
+				add_wonder_stage = 1
+				add_wonder_stage = 1
+				add_wonder_stage = 1
+				add_wonder_stage = 1				#5
+				add_wonder_stage = 1				#6
+				add_wonder_upgrade = upgrade_cow_district_harbor
+				add_wonder_upgrade = upgrade_cow_district_lys_garden
+			}
+		}
+	}
+}
+
+#--------------Myr--------------------#
+province_event = {
+	id = cowcompat.14
+	is_triggered_only = yes
+	hide_window = yes
+	immediate = {
+		if = {
+			limit = {
+				year = 4000
+			}
+			add_wonder = wonder_city_of_wonders_myr
+			wonder = {
+				add_wonder_stage = 1
+				add_wonder_stage = 1
+				add_wonder_stage = 1
+				add_wonder_stage = 1				#5
+				add_wonder_stage = 1				#6
+				add_wonder_upgrade = upgrade_cow_district_harbor
+				add_wonder_upgrade = upgrade_cow_upgrade_myrish_glassworks
+			}
+		}
+	}
+}
+
+#--------------Pentos--------------------#
+province_event = {
+	id = cowcompat.15
+	is_triggered_only = yes
+	hide_window = yes
+	immediate = {
+		if = {
+			limit = {
+				year = 4000
+			}
+			set_province_flag = cow_pentos
+			add_wonder = wonder_city_of_wonders_pentos
+			wonder = {
+				add_wonder_stage = 1
+				add_wonder_stage = 1
+				add_wonder_stage = 1
+				add_wonder_stage = 1				#5
+				add_wonder_stage = 1				#6
+				add_wonder_upgrade = upgrade_cow_district_red_temple
+				add_wonder_upgrade = upgrade_cow_district_pentos_harbor
+			}
+		}
+	}
+}
+
+#--------------Ny Sar--------------------#
+province_event = {
+	id = cowcompat.16
+	is_triggered_only = yes
+	hide_window = yes
+	immediate = {
+		add_wonder = wonder_city_of_wonders_ny_sar
+		if = {
+			limit = {
+				year = 7299
+			}
+			wonder = {
+				set_wonder_damaged = yes
+			}
+		}
+		else = {
+			wonder = {
+				add_wonder_stage = 1
+				add_wonder_stage = 1
+				add_wonder_stage = 1
+				add_wonder_stage = 1				#5
+			}
+		}
+	}
+}
+
+#--------------Volantis--------------#
+province_event = {
+	id = cowcompat.17
+	is_triggered_only = yes
+	hide_window = yes
+	immediate = {
+		if = {
+			limit = {
+				year = 4000
+			}
+			add_wonder = wonder_city_of_wonders_volantis
+			wonder = {
+				add_wonder_stage = 1
+				add_wonder_stage = 1
+				add_wonder_stage = 1				#4
+				add_wonder_stage = 1
+				add_wonder_stage = 1				#6
+				add_wonder_stage = 1
+				add_wonder_stage = 1				#8
+				add_wonder_upgrade = upgrade_cow_district_harbor
+				add_wonder_upgrade = upgrade_cow_district_red_temple_volantis
+				add_wonder_upgrade = upgrade_cow_district_black_walls
+				add_wonder_upgrade = upgrade_cow_volantis_bridge
+			}
+		}
+	}
+}
+
+#--------------Norvos--------------#
+province_event = {
+	id = cowcompat.18
+	is_triggered_only = yes
+	hide_window = yes
+	immediate = {
+		if = {
+			limit = {
+				year = 4000
+			}
+			set_province_flag = cow_norvos
+			add_wonder = wonder_city_of_wonders_norvos
+			wonder = {
+				add_wonder_stage = 1
+				add_wonder_stage = 1
+				add_wonder_stage = 1				#4
+				add_wonder_stage = 1
+				add_wonder_stage = 1				#6
+				add_wonder_upgrade = upgrade_cow_bells_norvos
+			}
+		}
+	}
+}
+
+#--------------Braavos--------------#
+province_event = {
+	id = cowcompat.19
+	is_triggered_only = yes
+	hide_window = yes
+	immediate = {
+		if = {
+			limit = {
+				year = 7600
+			}
+			set_province_flag = cow_braavos
+			add_wonder = wonder_city_of_wonders_braavos
+			wonder = {
+				add_wonder_stage = 1
+				add_wonder_stage = 1
+				add_wonder_stage = 1				#4
+				add_wonder_stage = 1
+				add_wonder_stage = 1				#6
+				add_wonder_stage = 1				#7
+				add_wonder_upgrade = upgrade_cow_district_harbor
+				add_wonder_upgrade = upgrade_cow_upgrade_house_black_White
+				add_wonder_upgrade = upgrade_cow_district_titan_of_braavos
+				#add_wonder_upgrade = upgrade_cow_district_red_temple
+			}
+		}
+	}
+}
+
+#--------------Lorath--------------#
+province_event = {
+	id = cowcompat.20
+	is_triggered_only = yes
+	hide_window = yes
+	immediate = {
+		if = {
+			limit = {
+				year = 6700
+			}
+			add_wonder = wonder_city_of_wonders_lorath
+			wonder = {
+				add_wonder_stage = 1
+				add_wonder_stage = 1
+				add_wonder_stage = 1				#4
+			}
+		}
+	}
+}
+
+#--------------Qohor--------------#
+province_event = {
+	id = cowcompat.21
+	is_triggered_only = yes
+	hide_window = yes
+	immediate = {
+		if = {
+			limit = {
+				year = 4000
+			}
+			set_province_flag = cow_qohor
+			add_wonder = wonder_city_of_wonders_qohor
+			wonder = {
+				add_wonder_stage = 1
+				add_wonder_stage = 1
+				add_wonder_stage = 1				#4
+				add_wonder_stage = 1				#5
+				add_wonder_stage = 1				#6
+				add_wonder_upgrade = upgrade_cow_anogrion
+			}
+		}
+	}
+}
+
+#--------------Essaria--------------#
+province_event = {
+	id = cowcompat.22
+	is_triggered_only = yes
+	hide_window = yes
+	immediate = {
+		if = {
+			limit = {
+				year = 7980
+			}
+			add_wonder = wonder_city_of_wonders_essaria
+			wonder = {
+				add_wonder_stage = 1
+				set_wonder_damaged = yes
+			}
+		}
+		else_if = {
+			limit = {
+				year = 4000
+			}
+			add_wonder = wonder_city_of_wonders_essaria
+			wonder = {
+				add_wonder_stage = 1
+				add_wonder_stage = 1				#3
+			}
+		}
+	}
+}
+
+#--------------Sarnath--------------#
+province_event = {
+	id = cowcompat.23
+	is_triggered_only = yes
+	hide_window = yes
+	immediate = {
+		if = {
+			limit = {
+				year = 7980
+			}
+			add_wonder = wonder_city_of_wonders_sarnath
+			wonder = {
+				add_wonder_stage = 1
+				set_wonder_damaged = yes
+			}
+		}
+		else_if = {
+			limit = {
+				year = 4000
+			}
+			add_wonder = wonder_city_of_wonders_sarnath
+			wonder = {
+				add_wonder_stage = 1
+				add_wonder_stage = 1
+				add_wonder_stage = 1				#4
+				add_wonder_stage = 1				#5
+			}
+		}
+	}
+}
+
+#--------------Port of Ibben--------------#
+province_event = {
+	id = cowcompat.24
+	is_triggered_only = yes
+	hide_window = yes
+	immediate = {
+		add_wonder = wonder_city_of_wonders_ibben
+		wonder = {
+			add_wonder_stage = 1
+			add_wonder_stage = 1
+		}
+	}
+}
+
+#--------------Elyria--------------#
+province_event = {
+	id = cowcompat.25
+	is_triggered_only = yes
+	hide_window = yes
+	immediate = {
+		add_wonder = wonder_city_of_wonders_elyria
+		wonder = {
+			add_wonder_stage = 1
+			add_wonder_stage = 1
+		}
+	}
+}
+
+#--------------Meereen--------------#
+province_event = {
+	id = cowcompat.26
+	is_triggered_only = yes
+	hide_window = yes
+	immediate = {
+		set_province_flag = cow_meereen
+		add_wonder = wonder_city_of_wonders_meereen
+		wonder = {
+			add_wonder_stage = 1
+			add_wonder_stage = 1
+			add_wonder_stage = 1			#4
+			add_wonder_stage = 1			#5
+			add_wonder_stage = 1			#6
+			add_wonder_upgrade = upgrade_cow_district_greatpyramid_meereen
+			add_wonder_upgrade = upgrade_cow_district_amphitheatre
+		}
+	}
+}
+
+#--------------Yunkai--------------#
+province_event = {
+	id = cowcompat.27
+	is_triggered_only = yes
+	hide_window = yes
+	immediate = {
+		set_province_flag = cow_yunkai
+		add_wonder = wonder_city_of_wonders_yunkai
+		wonder = {
+			add_wonder_stage = 1
+			add_wonder_stage = 1
+			add_wonder_stage = 1			#4
+			add_wonder_upgrade = upgrade_cow_district_yellowpyramid_yunkai
+		}
+	}
+}
+
+#--------------Astapor--------------#
+province_event = {
+	id = cowcompat.28
+	is_triggered_only = yes
+	hide_window = yes
+	immediate = {
+		set_province_flag = cow_astapor
+		add_wonder = wonder_city_of_wonders_astapor
+		wonder = {
+			add_wonder_stage = 1
+			add_wonder_stage = 1
+			add_wonder_stage = 1			#4
+			add_wonder_upgrade = upgrade_cow_district_redpyramid_astapor
+		}
+	}
+}
+
+#-------------- Old Ghis--------------#
+province_event = {
+	id = cowcompat.29
+	is_triggered_only = yes
+	hide_window = yes
+	immediate = {
+		add_wonder = wonder_city_of_wonders_old_ghis
+		if = {
+			limit = {
+				year = 4000
+			}
+			wonder = {
+				set_wonder_damaged = yes
+			}
+		}
+		else = {
+			wonder = {
+				add_wonder_stage = 1
+				add_wonder_stage = 1
+				add_wonder_stage = 1				#4
+				add_wonder_stage = 1				#5
+				add_wonder_stage = 1				#6
+			}
+		}
+	}
+}
+
+#-------------New Ghis--------------#
+province_event = {
+	id = cowcompat.30
+	is_triggered_only = yes
+	hide_window = yes
+	immediate = {
+		set_province_flag = cow_new_ghis
+		add_wonder = wonder_city_of_wonders_new_ghis
+		wonder = {
+			add_wonder_stage = 1
+			add_wonder_stage = 1
+			add_wonder_stage = 1			#4
+			add_wonder_stage = 1			#5
+			add_wonder_upgrade = upgrade_cow_district_newpyramid_newghis
+		}
+	}
+}
+
+#-------------Qarth--------------#
+province_event = {
+	id = cowcompat.31
+	is_triggered_only = yes
+	hide_window = yes
+	immediate = {
+		set_province_flag = cow_qarth
+		add_wonder = wonder_city_of_wonders_qarth
+		wonder = {
+			add_wonder_stage = 1
+			add_wonder_stage = 1
+			add_wonder_stage = 1			#4
+			add_wonder_stage = 1			#5
+			add_wonder_stage = 1			#6
+			add_wonder_upgrade = upgrade_cow_district_triple_walls_qarth
+		}
+	}
+}
+
+#-------------Gogossos--------------#
+province_event = {
+	id = cowcompat.32
+	is_triggered_only = yes
+	hide_window = yes
+	immediate = {
+		add_wonder = wonder_city_of_wonders_gogossos
+		if = {
+			limit = {
+				year = 7949
+			}
+			wonder = {
+				set_wonder_damaged = yes
+			}
+		}
+		else_if = {
+			limit = {
+				year = 5890
+			}
+			wonder = {
+				add_wonder_stage = 1
+				add_wonder_stage = 1
+				add_wonder_stage = 1				#4
+				add_wonder_stage = 1				#5
+			}
+		}
+	}
+}
+
+#-------------Yin--------------#
+province_event = {
+	id = cowcompat.33
+	is_triggered_only = yes
+	hide_window = yes
+	immediate = {
+		add_wonder = wonder_city_of_wonders_yin
+		wonder = {
+			add_wonder_stage = 1
+			add_wonder_stage = 1
+			add_wonder_stage = 1			#4
+			add_wonder_stage = 1			#5
+			add_wonder_stage = 1			#6
+			add_wonder_stage = 1			#7
+			add_wonder_stage = 1			#8
+			add_wonder_upgrade = upgrade_cow_district_temple_buddhist
+			add_wonder_upgrade = upgrade_cow_district_harbor
+		}
+	}
+}
+
+#-------------Asshai--------------#
+province_event = {
+	id = cowcompat.34
+	is_triggered_only = yes
+	hide_window = yes
+	immediate = {
+		set_province_flag = cow_asshai
+		add_wonder = wonder_city_of_wonders_asshai
+		wonder = {
+			add_wonder_stage = 1
+			add_wonder_stage = 1
+			add_wonder_stage = 1			#4
+			add_wonder_stage = 1			#5
+			add_wonder_stage = 1			#6
+			add_wonder_stage = 1			#7
+			add_wonder_upgrade = upgrade_cow_anogrion
+			add_wonder_upgrade = upgrade_cow_district_harbor
+		}
+	}
+}
+
+#-------------Valyria--------------#
+province_event = {
+	id = cowcompat.35
+	is_triggered_only = yes
+	hide_window = yes
+	immediate = {
+		set_province_flag = cow_valyria
+		add_wonder = wonder_city_of_wonders_valyria
+		wonder = {
+			set_wonder_damaged = yes
+		}
+	}
+}
+
+

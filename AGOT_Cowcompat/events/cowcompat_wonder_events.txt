@@ -1,0 +1,80 @@
+namespace = cowcompat_interact
+#Interact with building
+character_event = {
+    id = cowcompat_interact.1
+    is_triggered_only = yes
+    ai = no
+    desc = "Where to?"
+    option = {
+        name = "Temple"
+        character_event = {
+            id = cowcompat_interact.10
+        }
+    }
+    option = {
+        name = "University"
+        character_event = {
+            id = cowcompat_interact.20
+        }
+    }
+    option = {
+        name = "Angorion"
+        character_event = {
+            id = cowcompat_interact.30
+        }
+    }
+    option = {
+        name = "Nevermind"
+    }
+}
+
+# TEMPLE
+character_event = {
+    id = cowcompat_interact.10
+    is_triggered_only = yes
+    ai = no
+    desc = "Temple"
+    option = {
+        name = "Donate"
+    }
+    option = {
+        name = "Nah"
+    }
+}
+
+# UNIVERSITY
+character_event = {
+    id = cowcompat_interact.20
+    is_triggered_only = yes
+    ai = no
+    desc = "University"
+    option = {
+        name = "Learning"
+    }
+    option = {
+        name = "Stewardship"
+    }
+    option = {
+        name = "Diplomacy"
+    }
+    option = {
+        name = "Nah"
+    }
+}
+
+# TEMPLE
+character_event = {
+    id = cowcompat_interact.30
+    is_triggered_only = yes
+    ai = no
+    desc = "Angorion"
+    option = {
+        name = "Mana"
+    }
+    option = {
+        name = "Intrigue"
+    }
+    option = {
+        name = "Nah"
+    }
+}

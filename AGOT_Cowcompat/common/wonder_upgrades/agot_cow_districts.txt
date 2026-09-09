@@ -1,0 +1,907 @@
+upgrade_cow_district_titan_of_braavos = {
+    # Titan of Braavos
+    picture = GFX_upgrade_cow_district_titan_of_braavos
+    potential = {
+        FROMFROMFROM = {
+            has_province_flag = cow_braavos
+            NOT = {
+                has_wonder_upgrade = upgrade_cow_district_fortress
+            }
+        }
+    }
+    active = {
+    }
+    allow = {
+        FROMFROMFROM = {
+            has_province_flag = cow_braavos
+            NOT = {
+                has_wonder_upgrade = upgrade_cow_district_fortress
+            }
+        }
+    }
+    flags = {
+        is_historical
+        defensive
+        inspires_greatness
+        cost_high
+    }
+    build_time = 300
+    gold_cost_flat = 2400
+    gold_cost_ticking = 6
+    local_modifier = {
+        local_revolt_risk = -0.02
+        fort_level = 2
+        knights = 30
+        tax_income = 2
+        siege_defence = 0.01
+    }
+    owner_modifier = {
+    }
+    ai_will_do = {
+        factor = 1
+    }
+}
+upgrade_cow_district_university_citadel = {
+    # Citadel
+    picture = GFX_upgrade_cow_district_university_citadel
+    potential = {
+        is_nomadic = no
+        FROMFROMFROM = {
+            has_province_flag = cow_oldtown
+            NOT = {
+                has_wonder_upgrade = upgrade_cow_district_university
+            }
+        }
+    }
+    active = {
+    }
+    allow = {
+        FROMFROMFROM = {
+            has_province_flag = cow_oldtown
+            NOT = {
+                has_wonder_upgrade = upgrade_cow_district_university
+            }
+        }
+    }
+    flags = {
+        is_historical
+        inspires_learning
+        cost_high
+        gives_artifact
+        gives_artifact_book
+    }
+    build_time = 300
+    gold_cost_flat = 2500
+    gold_cost_ticking = 6
+    local_modifier = {
+        disease_defence = 0.1
+        short_reign_length = -1
+        monthly_character_piety = 0.25
+        monthly_character_prestige = 0.25
+    }
+    owner_modifier = { # this bonus goes to the top liege
+    }
+    ai_will_do = {
+        factor = 1
+        modifier = {
+            factor = 3
+            trait = scholar
+        }
+        modifier = {
+            factor = 3
+            trait = theologian
+        }
+        modifier = {
+            factor = 3
+            trait = erudite
+        }
+        modifier = {
+            factor = 3
+            trait = mastermind_theologian
+        }
+    }
+}
+
+upgrade_cow_district_library_citadel = {
+    # Library of the Citadel
+    picture = GFX_upgrade_cow_district_library_citadel
+    potential = {
+        is_nomadic = no
+        FROMFROMFROM = {
+            has_province_flag = cow_oldtown
+            #province_id = 286			# Oldtown
+            NOT = {
+                has_wonder_upgrade = upgrade_cow_district_library
+            }
+        }
+    }
+    allow = {
+        is_nomadic = no
+        FROMFROMFROM = {
+            has_province_flag = cow_oldtown
+            #province_id = 286			# Oldtown
+            NOT = {
+                has_wonder_upgrade = upgrade_cow_district_library
+            }
+        }
+    }
+    active = {
+    }
+    flags = {
+        is_historical
+        inspires_learning
+        cost_high
+        gives_artifact
+        gives_artifact_book
+    }
+    build_time = 300
+    gold_cost_flat = 3000
+    gold_cost_ticking = 6
+    local_modifier = {
+        short_reign_length = -1
+        monthly_character_piety = 0.5
+        monthly_character_prestige = 0.5
+        disease_defence = 0.02
+    }
+    owner_modifier = {
+    }
+    ai_will_do = {
+        factor = 1
+        modifier = {
+            factor = 3
+            trait = scholar
+        }
+        modifier = {
+            factor = 3
+            trait = theologian
+        }
+        modifier = {
+            factor = 3
+            trait = erudite
+        }
+        modifier = {
+            factor = 3
+            trait = mastermind_theologian
+        }
+    }
+}
+
+upgrade_cow_district_great_sept = {
+    # Great Sept
+    picture = GFX_upgrade_cow_district_great_sept
+    potential = {
+        religion = the_seven
+        FROMFROMFROM = {
+            NOT = {
+                has_cow_unique_great_sept_district_trigger = yes
+            }
+        }
+    }
+    active = {
+        ROOT = {
+            religion = the_seven
+        }
+    }
+    allow = {
+        ROOT = {
+            religion = the_seven
+        }
+        custom_tooltip = {
+            # Custom tooltip to explain the in-game tooltip
+            text = DOES_NOT_HAVE_UNIQUE_COW_DISTRICT
+            hidden_tooltip = {
+                FROMFROMFROM = {
+                    NOT = {
+                        has_cow_unique_great_sept_district_trigger = yes
+                    }
+                }
+            }
+        }
+    }
+    flags = {
+        holy_building
+        inspires_piety
+        cost_medium
+        # gives_artifact
+        # gives_artifact_bells
+    }
+    build_time = 300
+    gold_cost_flat = 4400
+    gold_cost_ticking = 8
+    local_modifier = {
+        castle_opinion = 3
+        monthly_character_prestige = 0.2
+        monthly_character_piety = 0.3
+    }
+    ai_will_do = {
+        factor = 1
+        modifier = {
+            factor = 3
+            trait = zealous
+        }
+    }
+}
+
+upgrade_cow_district_great_sept_baelor = {
+    # Great Sept of Baelor
+    picture = GFX_upgrade_cow_district_great_sept_baelor
+    potential = {
+        religion = the_seven
+        FROMFROMFROM = {
+            has_province_flag = cow_kl
+            NOT = {
+                has_wonder_upgrade = upgrade_cow_district_great_sept
+            }
+        }
+    }
+    active = {
+        ROOT = {
+            religion = the_seven
+        }
+    }
+    allow = {
+        ROOT = {
+            religion = the_seven
+        }
+        FROMFROMFROM = {
+            has_province_flag = cow_kl
+            NOT = {
+                has_wonder_upgrade = upgrade_cow_district_great_sept
+            }
+        }
+    }
+    flags = {
+        is_historical
+        holy_building
+        inspires_piety
+        cost_medium
+        # gives_artifact
+        # gives_artifact_bells
+    }
+    build_time = 300
+    gold_cost_flat = 4400
+    gold_cost_ticking = 8
+    local_modifier = {
+        monthly_character_piety = 0.5
+        castle_opinion = 5
+    }
+    ai_will_do = {
+        factor = 1
+        modifier = {
+            factor = 3
+            trait = zealous
+        }
+    }
+}
+
+upgrade_cow_district_great_sept_starry = {
+    # Starry Sept
+    picture = GFX_upgrade_cow_district_great_sept_starry
+    potential = {
+        religion = the_seven
+        FROMFROMFROM = {
+            has_province_flag = cow_oldtown
+            NOT = {
+                has_wonder_upgrade = upgrade_cow_district_great_sept
+            }
+        }
+    }
+    active = {
+        ROOT = {
+            religion = the_seven
+        }
+    }
+    allow = {
+        ROOT = {
+            religion = the_seven
+        }
+        FROMFROMFROM = {
+            has_province_flag = cow_oldtown
+            NOT = {
+                has_wonder_upgrade = upgrade_cow_district_great_sept
+            }
+        }
+    }
+    flags = {
+        is_historical
+        holy_building
+        inspires_piety
+        cost_medium
+        # gives_artifact
+        # gives_artifact_bells
+    }
+    build_time = 300
+    gold_cost_flat = 4400
+    gold_cost_ticking = 8
+    local_modifier = {
+        monthly_character_piety = 0.5
+        castle_opinion = 4
+    }
+    owner_modifier = {
+
+    }
+    ai_will_do = {
+        factor = 1
+        modifier = {
+            factor = 3
+            trait = zealous
+        }
+    }
+}
+
+upgrade_cow_district_red_temple = {
+    # Great Red Temple
+    picture = GFX_upgrade_cow_district_red_temple
+    potential = {
+        #religion = rhllor
+        FROMFROMFROM = {
+            NOT = {
+                has_cow_unique_red_temple_district_trigger = yes
+            }
+        }
+    }
+    active = {
+        ROOT = {
+            religion = rhllor
+        }
+    }
+    allow = {
+        ROOT = {
+            religion = rhllor
+        }
+        custom_tooltip = {
+            # Custom tooltip to explain the in-game tooltip
+            text = DOES_NOT_HAVE_UNIQUE_COW_DISTRICT
+            hidden_tooltip = {
+                FROMFROMFROM = {
+                    NOT = {
+                        has_cow_unique_red_temple_district_trigger = yes
+                    }
+                }
+            }
+        }
+    }
+    flags = {
+        holy_building
+        inspires_piety
+        cost_medium
+    }
+    build_time = 300
+    gold_cost_flat = 4400
+    gold_cost_ticking = 6
+    local_modifier = {
+        monthly_character_piety = 0.5
+        local_revolt_risk = -0.01
+    }
+    owner_modifier = {
+
+    }
+    ai_will_do = {
+        factor = 1
+        modifier = {
+            factor = 3
+            trait = zealous
+        }
+    }
+}
+
+upgrade_cow_district_red_temple_volantis = {
+    # Temple of the Lord of Light (Volantis)
+    picture = GFX_upgrade_cow_district_red_temple_volantis
+    potential = {
+        #religion = rhllor
+        FROMFROMFROM = {
+            has_province_flag = cow_volantis
+            NOT = {
+                has_wonder_upgrade = upgrade_cow_district_red_temple
+            }
+        }
+    }
+    active = {
+        ROOT = {
+            religion = rhllor
+        }
+    }
+    allow = {
+        ROOT = {
+            religion = rhllor
+        }
+        FROMFROMFROM = {
+
+            has_province_flag = cow_volantis
+
+            NOT = {
+                has_wonder_upgrade = upgrade_cow_district_red_temple
+            }
+        }
+    }
+    flags = {
+        is_historical
+        holy_building
+        inspires_piety
+        cost_medium
+    }
+    build_time = 300
+    gold_cost_flat = 4400
+    gold_cost_ticking = 6
+    local_modifier = {
+        local_revolt_risk = -0.02
+        monthly_character_piety = 0.5
+    }
+    owner_modifier = {
+    }
+    ai_will_do = {
+        factor = 1
+        modifier = {
+            factor = 3
+            trait = zealous
+        }
+    }
+}
+
+upgrade_cow_district_black_walls = {
+    # Black Walls
+    picture = GFX_upgrade_cow_district_grand_walls_athens
+    desc = ca_black_wall_desc
+    potential = {
+        FROMFROMFROM = {
+            OR = {
+                has_province_flag = cow_volantis
+                has_province_flag = cow_valyria
+            }
+        }
+    }
+    active = {
+    }
+    allow = {
+        FROMFROMFROM = {
+            OR = {
+                has_province_flag = cow_volantis
+                has_province_flag = cow_valyria
+            }
+        }
+    }
+    flags = {
+        defensive
+        cost_high
+    }
+    build_time = 3500
+    gold_cost_flat = 3000
+    gold_cost_ticking = 6
+    local_modifier = {
+        fort_level = 3 #+5
+        siege_defence = 0.05
+    }
+    owner_modifier = {
+    }
+    ai_will_do = {
+        factor = 1
+    }
+}
+
+upgrade_cow_district_triple_walls_qarth = {
+    picture = GFX_upgrade_cow_district_triple_walls_qarth
+    potential = {
+        FROMFROMFROM = { has_province_flag = cow_qarth }
+    }
+    active = {
+    }
+    allow = {
+        has_province_flag = cow_qarth
+    }
+    flags = {
+        cost_high
+        historical
+        defensive
+    }
+    build_time = 3000
+    gold_cost_flat = 4400
+    gold_cost_ticking = 8
+    local_modifier = {
+        fort_level = 3 #+5
+        siege_defence = 0.05
+    }
+    ai_will_do = {
+        factor = 1
+    }
+}
+
+upgrade_cow_district_greatpyramid_meereen = {
+    # Great Pyramid
+    picture = GFX_upgrade_cow_district_pyramid
+    potential = {
+        FROMFROMFROM = {
+            has_province_flag = cow_meereen
+        }
+    }
+    active = {
+    }
+    allow = {
+        FROMFROMFROM = {
+            has_province_flag = cow_meereen
+        }
+    }
+    flags = {
+        defensive
+        cost_high
+    }
+    build_time = 300
+    gold_cost_flat = 4400
+    gold_cost_ticking = 8
+    local_modifier = {
+        local_revolt_risk = -0.03
+        knights = 500
+        fort_level = 1
+        tax_income = 2
+        levy_size = -0.2
+        garrison_size = -0.2
+    }
+    owner_modifier = {
+
+    }
+    ai_will_do = {
+        factor = 0.5
+        modifier = {
+            factor = 3
+            trait = proud
+        }
+        modifier = {
+            factor = 3
+            trait = lunatic
+        }
+        modifier = {
+            factor = 0.5
+            trait = humble
+        }
+    }
+}
+
+upgrade_cow_district_redpyramid_astapor = {
+    # Great Pyramid
+    picture = GFX_upgrade_cow_district_pyramid
+    potential = {
+        FROMFROMFROM = {
+            has_province_flag = cow_astapor
+        }
+    }
+    active = {
+    }
+    allow = {
+        FROMFROMFROM = {
+            has_province_flag = cow_astapor
+        }
+    }
+    flags = {
+        defensive
+        cost_high
+    }
+    build_time = 300
+    gold_cost_flat = 4400
+    gold_cost_ticking = 8
+    local_modifier = {
+        local_revolt_risk = -0.01
+        heavy_infantry = 1000
+        heavy_infantry_morale = 0.2
+        heavy_infantry_defensive = 0.1
+        heavy_infantry_offensive = 0.1
+        fort_level = 2
+        tax_income = 0.5
+        levy_size = -0.2
+        garrison_size = -0.2
+    }
+    owner_modifier = {
+
+    }
+    ai_will_do = {
+        factor = 1
+    }
+}
+
+upgrade_cow_district_yellowpyramid_yunkai = {
+    # Great Pyramid
+    picture = GFX_upgrade_cow_district_pyramid
+    potential = {
+        FROMFROMFROM = {
+            has_province_flag = cow_yunkai
+        }
+    }
+    active = {
+    }
+    allow = {
+        FROMFROMFROM = {
+            has_province_flag = cow_yunkai
+        }
+    }
+    flags = {
+        burial_ground
+        cost_high
+    }
+    build_time = 300
+    gold_cost_flat = 4400
+    gold_cost_ticking = 8
+    local_modifier = {
+        local_revolt_risk = -0.03
+        fort_level = 2
+        tax_income = 4
+        levy_size = -0.1
+        garrison_size = -0.1
+    }
+    owner_modifier = {
+
+    }
+    ai_will_do = {
+        factor = 1
+    }
+}
+
+upgrade_cow_district_newpyramid_newghis = {
+    # Great Pyramid
+    picture = GFX_upgrade_cow_district_pyramid
+    potential = {
+        FROMFROMFROM = {
+            has_province_flag = cow_new_ghis
+        }
+    }
+    active = {
+    }
+    allow = {
+        FROMFROMFROM = {
+            has_province_flag = cow_new_ghis
+        }
+    }
+    flags = {
+        burial_ground
+        cost_high
+    }
+    build_time = 300
+    gold_cost_flat = 4400
+    gold_cost_ticking = 8
+    local_modifier = {
+        local_revolt_risk = -0.01
+        heavy_infantry = 1000
+        heavy_infantry_morale = 0.25
+        heavy_infantry_defensive = 0.15
+        heavy_infantry_offensive = 0.15
+        galleys = 35
+        fort_level = 2
+        tax_income = 0.5
+        levy_size = -0.3
+    }
+    owner_modifier = {
+    }
+    ai_will_do = {
+        factor = 1
+    }
+}
+
+upgrade_cow_district_hall_dragonlords = {
+    picture = GFX_upgrade_cow_district_hall_dragonlords
+    potential = {
+        FROMFROMFROM = {
+            has_province_flag = cow_valyria
+            NOT = {
+                has_wonder_upgrade = upgrade_cow_district_palace
+            }
+        }
+    }
+    active = {
+    }
+    allow = {
+        FROMFROMFROM = {
+            has_province_flag = cow_valyria
+            NOT = {
+                has_wonder_upgrade = upgrade_cow_district_palace
+            }
+        }
+    }
+    flags = {
+        cost_high
+        historical
+    }
+    build_time = 160
+    gold_cost_flat = 6000
+    gold_cost_ticking = 10
+    owner_modifier = {
+        retinuesize = 4000
+        retinuesize_perc = 0.25
+    }
+    local_modifier = {
+        levy_size = -0.05
+        monthly_character_prestige = 0.5
+        land_morale = 0.02
+        castle_opinion = 10
+        fort_level = 1
+    }
+    ai_will_do = {
+        factor = 1
+    }
+}
+upgrade_cow_district_dragon_towers = {
+    picture = GFX_upgrade_cow_dragon_towers
+    potential = {
+        FROMFROMFROM = {
+            has_province_flag = cow_valyria
+            NOT = {
+                has_wonder_upgrade = upgrade_cow_district_fortress
+            }
+        }
+    }
+    active = {
+    }
+    allow = {
+        FROMFROMFROM = {
+            has_province_flag = cow_valyria
+            NOT = {
+                has_wonder_upgrade = upgrade_cow_district_fortress
+            }
+        }
+    }
+    flags = {
+        cost_high
+        historical
+    }
+    build_time = 120
+    gold_cost_flat = 4100
+    gold_cost_ticking = 8
+    local_modifier = {
+        knights = 750
+        fort_level = 1
+        castle_opinion = 10
+        tax_income = 6
+        fort_level = 2
+        siege_defence = 0.1
+    }
+    owner_modifier = {
+    }
+    ai_will_do = {
+        factor = 1
+    }
+}
+upgrade_cow_district_valyria_harbor = {
+    picture = GFX_upgrade_cow_district_valyria_harbor
+    potential = {
+        FROMFROMFROM = {
+            has_province_flag = cow_valyria
+            NOT = {
+                has_wonder_upgrade = upgrade_cow_district_harbor
+            }
+        }
+    }
+    active = {
+    }
+    allow = {
+        FROMFROMFROM = {
+            has_province_flag = cow_valyria
+            NOT = {
+                has_wonder_upgrade = upgrade_cow_district_harbor
+            }
+        }
+    }
+    flags = {
+        cost_medium
+    }
+    build_time = 300
+    gold_cost_flat = 2900
+    gold_cost_ticking = 6
+    local_modifier = {
+        local_tax_modifier = 0.15
+        tradevalue = 150
+        local_build_cost_modifier = -0.1
+        local_build_time_modifier = -0.1
+    }
+    owner_modifier = {
+    }
+    ai_will_do = {
+        factor = 1
+        modifier = {
+            factor = 3
+            trait = administrator
+        }
+        modifier = {
+            factor = 3
+            trait = greedy
+        }
+    }
+}
+
+upgrade_cow_district_pentos_harbor = {
+    # Great Harbor
+    picture = GFX_upgrade_cow_district_pentos_harbor
+    potential = {
+        FROMFROMFROM = {
+            has_province_flag = cow_pentos
+            NOT = {
+                has_wonder_upgrade = upgrade_cow_district_harbor
+            }
+        }
+    }
+    active = {
+    }
+    allow = {
+        FROMFROMFROM = {
+            has_province_flag = cow_pentos
+            NOT = {
+                has_wonder_upgrade = upgrade_cow_district_harbor
+            }
+        }
+    }
+    flags = {
+        defensive
+        cost_medium
+    }
+    build_time = 300
+    gold_cost_flat = 2900
+    gold_cost_ticking = 6
+    local_modifier = {
+        local_tax_modifier = 0.15
+        tradevalue = 150
+        local_build_cost_modifier = -0.1
+        local_build_time_modifier = -0.1
+    }
+    owner_modifier = {
+    }
+    ai_will_do = {
+        factor = 1
+        modifier = {
+            factor = 3
+            trait = administrator
+        }
+        modifier = {
+            factor = 3
+            trait = greedy
+        }
+    }
+}
+
+upgrade_cow_district_lys_garden = {
+    # 'Magnificent' Garden
+    picture = GFX_upgrade_cow_district_gardens_parsa
+    potential = {
+        FROMFROMFROM = {
+            has_province_flag = cow_lys
+            NOT = {
+                has_wonder_upgrade = upgrade_cow_district_garden
+            }
+        }
+    }
+    active = {
+    }
+    allow = {
+        FROMFROMFROM = {
+            has_province_flag = cow_lys
+            NOT = {
+                has_wonder_upgrade = upgrade_cow_district_garden
+            }
+        }
+    }
+    build_time = 300
+    gold_cost_flat = 2800
+    gold_cost_ticking = 6
+    local_modifier = {
+        #disease_defence = -0.1 nah
+        monthly_character_prestige = 0.5
+        local_tax_modifier = 0.2
+        local_revolt_risk = -0.05
+    }
+    owner_modifier = {
+        # monthly_character_prestige = 0.2
+        #health = 0.4
+        # fertility = 0.2
+        # diplomacy = 1
+    }
+    ai_will_do = {
+        factor = 1
+        modifier = {
+            factor = 3
+            trait = socializer
+        }
+        modifier = {
+            factor = 3
+            trait = gregarious
+        }
+        modifier = {
+            factor = 0.5
+            trait = shy
+        }
+    }
+}
