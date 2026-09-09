@@ -25,8 +25,8 @@
 # G24. City of Wonders (Sarnath) .................. wonder_city_of_wonders_sarnath - (Vaes Khewo)
 # G25. City of Wonders (Essaria) .................. wonder_city_of_wonders_essaria - (Vaes Khadokh)
 #----NEW by Gt.-----
-# X1. City of Wonders (Valyria) .................. wonder_city_of_wonders_valyria 
-# N0. City of Wonders (Lannisport) .................. wonder_city_of_wonders_lannisport
+# X1. City of Wonders (Valyria) .................. wonder_city_of_wonders_valyria
+
 ### Cities of Wonders ## City of Wonders ###
 namespace = cowcompat
 character_event = {

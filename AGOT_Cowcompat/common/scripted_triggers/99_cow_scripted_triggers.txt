@@ -284,3 +284,19 @@ has_cow_unique_pagan_stones_district_trigger = {
         # has_wonder_upgrade = upgrade_cow_district_stonehenge
     }
 }
+
+has_cow_religious_district_trigger = { # For Universal Upgrades
+
+    OR = {
+        has_wonder_upgrade = upgrade_cow_district_great_sept_baelor
+        has_wonder_upgrade = upgrade_cow_district_great_sept_starry
+        has_wonder_upgrade = upgrade_cow_district_red_temple_volantis
+
+        has_wonder_upgrade = upgrade_cow_district_great_sept
+        has_wonder_upgrade = upgrade_cow_district_red_temple
+        has_wonder_upgrade = upgrade_cow_district_temple_pagan
+        has_wonder_upgrade = upgrade_cow_district_temple_hellenic
+        has_wonder_upgrade = upgrade_cow_district_hindu_temple
+    }
+
+}

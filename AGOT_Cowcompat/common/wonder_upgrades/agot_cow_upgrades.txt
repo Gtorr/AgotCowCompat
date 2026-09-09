@@ -42,6 +42,36 @@ upgrade_cow_kl_iron_throne = {
     }
 }
 
+upgrade_cow_volantis_bridge = {
+    picture = GFX_upgrade_cow_district_long_bridge_volantis
+    desc = upgrade_cow_district_volantis_bridge_desc
+    potential = {
+        has_province_flag = cow_volantis
+    }
+    active = {
+    }
+    allow = {
+        has_province_flag = cow_volantis
+    }
+    flags = {
+        cost_high
+        historical
+    }
+    build_time = 300
+    gold_cost_flat = 4400
+    gold_cost_ticking = 8
+    owner_modifier = {
+        monthly_character_prestige = 0.5
+    }
+    local_modifier = {
+        levy_size = 0.1
+        tradevalue = 100
+        local_tax_modifier = 0.15
+    }
+    ai_will_do = {
+        factor = 1
+    }
+} 
 
 upgrade_cow_dragonpit = {
     #Dragonpit
