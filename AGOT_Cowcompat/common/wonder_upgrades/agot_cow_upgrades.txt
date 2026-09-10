@@ -44,7 +44,7 @@ upgrade_cow_kl_iron_throne = {
 
 upgrade_cow_volantis_bridge = {
     picture = GFX_upgrade_cow_district_long_bridge_volantis
-    desc = upgrade_cow_district_volantis_bridge_desc
+    #desc = upgrade_cow_district_volantis_bridge_desc
     potential = {
         FROMFROMFROM = {
             has_province_flag = cow_volantis
@@ -79,8 +79,7 @@ upgrade_cow_volantis_bridge = {
 upgrade_cow_dragonpit = {
     #Dragonpit
     picture = GFX_upgrade_cow_district_kl_dragonpit
-
-    desc = ca_dragon_pit_desc
+    #desc = ca_dragon_pit_desc
     potential = {
         OR = {
             culture_group = valyrian
@@ -144,7 +143,7 @@ upgrade_cow_dragonpit = {
 
 upgrade_cow_bells_norvos = {
     picture = GFX_upgrade_cow_three_bells_norvos
-    desc = upgrade_cow_three_bells_norvos_desc
+    #desc = upgrade_cow_three_bells_norvos_desc
     potential = {
         FROMFROMFROM = {
             has_province_flag = cow_volantis

@@ -2185,7 +2185,7 @@ upgrade_cow_golden_crown = {
 	build_time = 575
 	gold_cost_flat = 450
 	gold_cost_ticking = 1
-	lcol_modifier = {
+	local_modifier = {
 		castle_opinion = 3
 	}
 	ai_will_do = {
