@@ -1092,7 +1092,7 @@ province_event = {
 			add_wonder_stage = 1			#6
 			add_wonder_stage = 1			#7
 			add_wonder_stage = 1			#8
-			add_wonder_upgrade = upgrade_cow_district_temple_buddhist
+			#add_wonder_upgrade = upgrade_cow_district_temple_buddhist
 			add_wonder_upgrade = upgrade_cow_district_harbor
 		}
 	}

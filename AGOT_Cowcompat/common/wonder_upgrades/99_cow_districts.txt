@@ -773,7 +773,7 @@ upgrade_cow_district_palace = {
 		tradevalue = 50
 		local_tax_modifier = 0.1
 		land_organisation = 0.02
-		castle_opinion = 2
+		castle_opinion = 5
 	}
 	owner_modifier = {
 	}
