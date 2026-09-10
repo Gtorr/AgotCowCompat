@@ -46,12 +46,16 @@ upgrade_cow_volantis_bridge = {
     picture = GFX_upgrade_cow_district_long_bridge_volantis
     desc = upgrade_cow_district_volantis_bridge_desc
     potential = {
-        has_province_flag = cow_volantis
+        FROMFROMFROM = {
+            has_province_flag = cow_volantis
+        }
     }
     active = {
     }
     allow = {
-        has_province_flag = cow_volantis
+        FROMFROMFROM = {
+            has_province_flag = cow_volantis
+        }
     }
     flags = {
         cost_high
@@ -61,7 +65,6 @@ upgrade_cow_volantis_bridge = {
     gold_cost_flat = 4400
     gold_cost_ticking = 8
     owner_modifier = {
-        monthly_character_prestige = 0.5
     }
     local_modifier = {
         levy_size = 0.1
@@ -71,7 +74,7 @@ upgrade_cow_volantis_bridge = {
     ai_will_do = {
         factor = 1
     }
-} 
+}
 
 upgrade_cow_dragonpit = {
     #Dragonpit
@@ -143,12 +146,16 @@ upgrade_cow_bells_norvos = {
     picture = GFX_upgrade_cow_three_bells_norvos
     desc = upgrade_cow_three_bells_norvos_desc
     potential = {
-        has_province_flag = cow_norvos
+        FROMFROMFROM = {
+            has_province_flag = cow_volantis
+        }
     }
     active = {
     }
     allow = {
-        has_province_flag = cow_norvos
+        FROMFROMFROM = {
+            has_province_flag = cow_volantis
+        }
     }
     flags = {
         cost_high
